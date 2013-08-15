@@ -1,7 +1,7 @@
 {
   "name": "jscat",
   "preferGlobal": "true",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "concatenate or print out colored JSON files",
   "main": "./index.js",
   "bin": {

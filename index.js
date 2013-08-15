@@ -7,6 +7,7 @@ var program = require('commander'),
   output;
 
 program
+  .version('0.0.2')
   .usage('[options] <file> [file ...]')
   .on('--help', function () {
     console.log('  Examples:');
