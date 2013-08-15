@@ -9,7 +9,7 @@ Install
 Install with npm
 
 ```
-[sudo] npm install -g https://github.com/overra/jscat.git
+[sudo] npm install -g git://github.com/overra/jscat.git
 ```
 
 Usage
