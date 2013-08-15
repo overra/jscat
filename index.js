@@ -10,12 +10,17 @@ program
   .on('--help', function () {
     console.log('  Examples:');
     console.log('');
-    console.log('    $ jscat foo.json bar');
-    console.log('    // will output color coded json objects');
+    console.log('    $ jscat foo.json');
+    console.log('');
+    console.log('  will output color coded JSON object');
     console.log('');
     console.log('    $ jscat foo.json bar.json > baz.json');
-    console.log('    // will write an uncolored concatenated');
-    console.log('    // array of json object to baz.json');
+    console.log('');
+    console.log('  will write an uncolored concatenated array of JSON objects to baz.json');
+    console.log('');
+    console.log('    $ echo \'{"foo": true, "bar": {"baz": false}}\' | ./bin/jscat');
+    console.log('');
+    console.log('  will output a colored representation of the JSON input');
     console.log('');
   })
   .parse(process.argv);
