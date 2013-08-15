@@ -14,7 +14,7 @@ program
     console.log('    // will output color coded json objects');
     console.log('');
     console.log('    $ jscat foo.json bar.json > baz.json');
-    console.log('    // will write a uncolored concatenated');
+    console.log('    // will write an uncolored concatenated');
     console.log('    // array of json object to baz.json');
     console.log('');
   })
