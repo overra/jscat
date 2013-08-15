@@ -34,7 +34,7 @@ $ jscat
 
   will write an uncolored concatenated array of JSON objects to baz.json
 
-    $ echo '{"foo": true, "bar": {"baz": false}}' | ./bin/jscat
+    $ echo '{"foo": true, "bar": {"baz": false}}' | jscat
 
   will output a colored representation of the JSON input
 
