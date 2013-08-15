@@ -18,7 +18,7 @@ program
     console.log('');
     console.log('  will write an uncolored concatenated array of JSON objects to baz.json');
     console.log('');
-    console.log('    $ echo \'{"foo": true, "bar": {"baz": false}}\' | ./bin/jscat');
+    console.log('    $ echo \'{"foo": true, "bar": {"baz": false}}\' | jscat');
     console.log('');
     console.log('  will output a colored representation of the JSON input');
     console.log('');
