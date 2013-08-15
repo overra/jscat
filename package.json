@@ -5,7 +5,7 @@
   "description": "concatenate or print out colored JSON files",
   "main": "./index.js",
   "bin": {
-    "jscat": "./bin/jscat" 
+    "jscat": "./bin/jscat"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
   "author": "Adam Snodgrass <adam@overra.com>",
   "license": "BSD",
   "dependencies": {
-    "commander": "~2.0.0"
+    "commander": "~2.0.0",
+    "colors": "~0.6.1"
   }
 }

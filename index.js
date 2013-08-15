@@ -1,6 +1,7 @@
 /*jslint indent: 2 */
 'use strict';
 var program = require('commander'),
+  colors    = require('colors'),
   path      = require('path'),
   util      = require('util'),
   output;
@@ -39,6 +40,18 @@ output = function () {
       file = require(path.resolve(process.cwd(), program.args[index]));
       if (outIsTTY) {
         data = util.inspect(file, false, null, true);
+        data = JSON.stringify(file, function (k,v) { 
+          if (typeof v === 'string') { 
+            return v+'%GREEN%'; 
+          }
+          if (typeof v === 'boolean') {
+            return v+'%YELLOW%';
+          }
+          return v; 
+        }, 2);
+        data = data.replace(/(\"[^\"]*)%GREEN%\"/g, '$1'.green + '"'.green);
+        data = data.replace(/: \"(.*)%YELLOW%\"/g, ': ' + '$1'.yellow);
+        data = data.replace(/: null/g, ': '+'null'.bold.white); 
         console.log(data);
       } else {
         data.push(file);
